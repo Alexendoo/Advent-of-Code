@@ -1,0 +1,1 @@
+Sue \d+: ((children: 3|cats: (\d{2,}|[8-9])|samoyeds: 2|pomeranians: [0-2]|akitas: 0|vizslas: 0|goldfish: [0-4]|trees: (\d{2,}|[4-9])|cars: 2|perfumes: 1)(, )?)++$
