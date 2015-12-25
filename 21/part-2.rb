@@ -1,5 +1,6 @@
 boss = IO.read('input').scan(/\d+/).map(&:to_i)
 shop = IO.read('shop').split(/\n\n/).map { |e| e.scan(/(?<!\+)\d+/).map(&:to_i).each_slice(3).to_a }
+
 shop.each_index { |i| shop[i] << [0, 0, 0] unless i.zero? }
 p shop[-1].product(*shop).select { |e|
   (e[0] != e[-1] || e[0] == [0, 0, 0]) &&
